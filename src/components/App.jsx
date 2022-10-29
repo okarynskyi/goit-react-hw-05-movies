@@ -1,4 +1,13 @@
+import { getTrendingMovies, getMovieById } from '../API';
+
+
 export const App = () => {
+
+  console.log(getTrendingMovies())
+
+  console.log(getMovieById(541134))
+
+
   return (
     <div
       style={{
