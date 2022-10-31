@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { getTrendingMovies } from 'API';
 import { MoviesList } from 'components/MoviesList/MoviesList';
+import css from './Home.module.css'
 
 
 export const Home = () => {
@@ -14,7 +15,7 @@ export const Home = () => {
 
     return (
         <div>
-            <title>This week's most popular movies</title>
+            <title  className={css.title}>Trending today</title>
             <MoviesList movies={movies} />
         </div>
     );
