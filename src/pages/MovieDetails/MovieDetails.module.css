@@ -1,0 +1,58 @@
+.movieById {
+    padding-top: 10px;
+}
+
+.back {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 80px;
+    border: 2px solid rgb(146, 146, 146);
+    border-radius: 4px;
+    padding: 0px 5px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+    color: black;
+}
+
+.section {
+    display: flex;
+    padding-top: 5px;
+    padding-bottom: 15px;
+}
+
+.info {
+    padding: 20px;
+}
+
+.info_title {
+    font-weight: 700;
+    font-size: 38px;
+    margin: 0px;
+}
+
+.info_overview {
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.info_genres {
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.info_text {
+    font-size: 18px;
+}
+
+.addInfo {
+    padding-bottom: 18px;
+    border-top: 2px solid rgb(146, 146, 146);
+    border-bottom: 2px solid rgb(146, 146, 146);
+    font-size: 18px;
+}
+
+.addInfo_link {
+    padding-left: 16px;
+}
