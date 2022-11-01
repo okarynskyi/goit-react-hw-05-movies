@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import css from './Searchbar.module.css'
 import PropTypes from 'prop-types';
 
 export const Searchbar = ({ onSubmit, value }) => {
@@ -18,24 +19,23 @@ export const Searchbar = ({ onSubmit, value }) => {
     setRequest(request);
   };
 
-  return (
-    <div>
-      <form onSubmit={handleSubmit}>
-        <input
-          name="request"
-          value={request}
-          type="text"
-          autoComplete="off"
-          autoFocus
-          placeholder="Search movie"
-          onChange={handleChange}
-        />
-        <button type="submit">
-          <span>Search</span>
-        </button>
-      </form>
-    </div>
-  );
+    return (
+        <form onSubmit={handleSubmit} className={css.form}>
+            <input
+                name="request"
+                value={request}
+                type="text"
+                autoComplete="off"
+                autoFocus
+                onChange={handleChange}
+                className={css.input}
+                placeholder="Search movie"
+            />
+            <button type="submit" className={css.button}>
+                <span>Search</span>
+            </button>
+        </form>
+    );
 };
 
 Searchbar.propTypes = {

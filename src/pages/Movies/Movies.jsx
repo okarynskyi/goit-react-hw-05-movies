@@ -1,7 +1,5 @@
 import { useState, useEffect } from 'react';
 import { useSearchParams } from 'react-router-dom';
-// import { ToastContainer, toast } from 'react-toastify';
-// import 'react-toastify/dist/ReactToastify.css';
 import { getSearchMovies } from 'API';
 import { Searchbar } from 'components/Searchbar/Searchbar';
 import { MoviesList } from '../../components/MoviesList/MoviesList';
