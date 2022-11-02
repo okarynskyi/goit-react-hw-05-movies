@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react';
 import { getMovieCast } from '../../API';
 
 
-export const Cast = () => {
+const Cast = () => {
   const { movieId } = useParams();
   const [cast, setCast] = useState([]);
   const [error, setError] = useState(null);
@@ -38,3 +38,5 @@ export const Cast = () => {
         </div>
     );
 };
+
+export default Cast;
